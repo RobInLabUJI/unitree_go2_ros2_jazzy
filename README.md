@@ -97,6 +97,14 @@ ros2 launch unitree_go2_sim unitree_go2_launch.py
 
 [Watch Demo on YouTube](https://youtu.be/NUu7TaZhaQM)
 
+Launch the Gazebo simulation in the TI building:
+
+```bash
+ros2 launch unitree_go2_sim unitree_go2_launch_TI.py
+```
+
+![Unitree Go2 Simulation](docs/simulation_TI.png)
+
 ### RVIZ Visualization
 
 The package now includes both `Velodyne 3D LiDAR` and `4D Lidar L1` sensors. You can visualize the point cloud data in RVIZ:
