@@ -64,7 +64,7 @@ sudo apt install ros-jazzy-velodyne-description
 
 ```bash
 cd ~/ros2_ws/src
-git clone https://github.com/khaledgabr77/unitree_go2_ros2
+git clone https://github.com/RobInLabUJI/unitree_go2_ros2_jazzy/
 ```
 
 ### 3. Install Dependencies
