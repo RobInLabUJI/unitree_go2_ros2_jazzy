@@ -9,9 +9,7 @@
     <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
     <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
     <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
-    <plugin
-      filename="gz-sim-sensors-system"
-      name="gz::sim::systems::Sensors">
+    <plugin name='gz::sim::systems::Sensors' filename='gz-sim-sensors-system'>
       <render_engine>ogre2</render_engine>
     </plugin>
     <gravity>0 0 -9.8000000000000007</gravity>
@@ -417,7 +415,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>6.518010139465332 -24.259399414062496 4 0 0 1.7483272868182265</pose>
+      <pose>6.518010139465332 -24.259399414062496 4 0 0 1.748327286818226</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -592,7 +590,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>6.5180001258850098 24.117000579833984 4 0 0 1.3941193897865323</pose>
+      <pose>6.5180001258850098 24.117000579833984 4 0 0 1.3941193897865327</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -768,6 +766,41 @@
         <enable_wind>false</enable_wind>
       </link>
       <pose>15.97200012207032 30.680999755859375 4 0 0 -2.3566253486507671</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='StairsPB'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>./meshes/StairsPB.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>./meshes/StairsPB.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-22 -45 0 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
