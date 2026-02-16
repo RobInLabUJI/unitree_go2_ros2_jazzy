@@ -51,7 +51,7 @@
             <specular>0.800000012 0.800000012 0.800000012 1</specular>
           </material>
         </visual>
-        <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 -1 0 0 0</pose>
         <inertial>
           <pose>0 0 0 0 0 0</pose>
           <mass>1</mass>
@@ -590,7 +590,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>6.5180001258850098 24.117000579833984 4 0 0 1.3941193897865327</pose>
+      <pose>6.5180001258850098 24.117000579833984 4 0 0 1.3941193897865334</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -801,6 +801,76 @@
         <enable_wind>false</enable_wind>
       </link>
       <pose>-22 -45 0 0 0 0</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='Ground'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>./meshes/Ground.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>./meshes/Ground.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-22 -45 0 0 0 0</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='Banc'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>./meshes/Banc.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>./meshes/Banc.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>5.9299999999999997 -22.350000000000001 4 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
